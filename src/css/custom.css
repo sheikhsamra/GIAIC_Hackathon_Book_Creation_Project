@@ -132,3 +132,59 @@
   background-color: #f8f9fa;
   font-weight: bold;
 }
+
+/* Enhanced homepage styling */
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .button--lg {
+    width: 100%;
+  }
+
+  .margin-left--sm {
+    margin-left: 0 !important;
+    margin-top: 1rem;
+  }
+}
+
+/* Homepage sections */
+.features {
+  padding: 4rem 0;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+/* Urdu text styling */
+.urdu-text {
+  font-family: 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
+  direction: rtl;
+  text-align: right;
+  font-size: 1.1em;
+  line-height: 2;
+}

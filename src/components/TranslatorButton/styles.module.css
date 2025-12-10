@@ -1,0 +1,41 @@
+.translator-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 8px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.translator-button:hover {
+  background-color: #1d4ed8;
+}
+
+.translator-button.urdu-mode {
+  background-color: #dc2626;
+}
+
+.translator-button.urdu-mode:hover {
+  background-color: #b91c1c;
+}
+
+/* Urdu text styling */
+.urdu-content {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif !important;
+}
+
+.urdu-content *:not([dir="ltr"]) {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Ensure code blocks remain LTR */
+.urdu-content .prism-code,
+.urdu-content .code-block {
+  direction: ltr !important;
+  text-align: left !important;
+}

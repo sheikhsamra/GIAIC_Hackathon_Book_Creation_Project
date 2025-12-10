@@ -1,0 +1,29 @@
+.container {
+  padding: 1rem;
+  border-left: 0.3rem solid #448aff;
+  background-color: #f5f7ff;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.objectivesList {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.objectiveItem {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.objectiveItem::marker {
+  color: #448aff;
+}

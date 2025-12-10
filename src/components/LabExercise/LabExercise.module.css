@@ -1,0 +1,181 @@
+.labContainer {
+  border: 2px solid #ff9800;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #fff3e0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.labTitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #1a1a1a;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.safetyButton {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.safetyButton:hover {
+  background-color: #e64a19;
+}
+
+.safetyContainer {
+  background-color: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.safetyTitle {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #c62828;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.safetyList {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.safetyItem {
+  margin-bottom: 0.5rem;
+  color: #d32f2f;
+}
+
+.objectivesContainer,
+.requirementsContainer {
+  margin-bottom: 1.5rem;
+}
+
+.objectivesTitle,
+.requirementsTitle {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.objectivesList,
+.requirementsList {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.objectiveItem,
+.requirementItem {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.stepsContainer {
+  margin-bottom: 1.5rem;
+}
+
+.stepsTitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.stepsList {
+  padding-left: 1.25rem;
+}
+
+.stepItem {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.stepLabel {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.stepCheckbox {
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.stepText {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.stepCompleted {
+  background-color: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.stepCompleted .stepText {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.outcomeContainer {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  border-left: 3px solid #2196f3;
+}
+
+.outcomeTitle {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+.outcomeText {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.completionMessage {
+  display: flex;
+  align-items: center;
+  background-color: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.completionIcon {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-right: 1rem;
+}
+
+.completionText {
+  margin: 0;
+  font-weight: 500;
+  color: #2e7d32;
+}

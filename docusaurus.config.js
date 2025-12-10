@@ -1,8 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -38,11 +37,13 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/your-username/physical-ai-textbook/tree/main/',
+            'https://github.com/sheikhsamra/GIAIC_Hackathon_Book_Creation_Project',
         },
         blog: false, // Disable blog if not needed
         theme: {
@@ -75,7 +76,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/your-username/physical-ai-textbook',
+            href: 'https://github.com/sheikhsamra/GIAIC_Hackathon_Book_Creation_Project',
             label: 'GitHub',
             position: 'right',
           },
@@ -103,6 +104,18 @@ const config = {
                 label: 'NVIDIA Isaac Platform',
                 to: '/docs/module-4',
               },
+              {
+                label: 'Humanoid Robotics',
+                to: '/docs/module-5',
+              },
+              {
+                label: 'Vision-Language-Action Systems',
+                to: '/docs/module-6',
+              },
+              {
+                label: 'Capstone Project',
+                to: '/docs/capstone',
+              },
             ],
           },
           {
@@ -120,6 +133,10 @@ const config = {
                 label: 'NVIDIA Isaac Forum',
                 href: 'https://forums.developer.nvidia.com/c/isaac/280',
               },
+              {
+                label: 'ROS Answers',
+                href: 'https://answers.ros.org/questions/',
+              },
             ],
           },
           {
@@ -127,7 +144,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-username/physical-ai-textbook',
+                href: 'https://github.com/sheikhsamra/GIAIC_Hackathon_Book_Creation_Project',
               },
             ],
           },
@@ -135,11 +152,11 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ['python', 'bash', 'yaml', 'xml'],
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+        additionalLanguages: ['python', 'bash', 'yaml', 'markup', 'json', 'cpp', 'docker', 'cmake', 'shell-session'],
       },
     }),
 };
 
-module.exports = config;
+export default config;

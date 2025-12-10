@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Robot head -->
+  <rect x="30" y="20" width="40" height="30" rx="5" fill="#2e8555" opacity="0.8"/>
+
+  <!-- Robot eyes -->
+  <circle cx="40" cy="35" r="3" fill="#fff"/>
+  <circle cx="60" cy="35" r="3" fill="#fff"/>
+
+  <!-- Robot mouth -->
+  <rect x="45" y="40" width="10" height="2" rx="1" fill="#fff"/>
+
+  <!-- Robot body -->
+  <rect x="25" y="50" width="50" height="30" rx="5" fill="#2e8555" opacity="0.6"/>
+
+  <!-- Robot arms -->
+  <rect x="15" y="55" width="10" height="20" rx="2" fill="#2e8555" opacity="0.6"/>
+  <rect x="75" y="55" width="10" height="20" rx="2" fill="#2e8555" opacity="0.6"/>
+
+  <!-- Robot legs -->
+  <rect x="35" y="80" width="8" height="15" rx="2" fill="#2e8555" opacity="0.6"/>
+  <rect x="57" y="80" width="8" height="15" rx="2" fill="#2e8555" opacity="0.6"/>
+
+  <!-- Circuit pattern -->
+  <path d="M35 25 h10 m10 0 h10 m-30 5 h5 m10 0 h5 m10 0 h5 m-30 5 h8 m12 0 h8 m-28 5 h6 m10 0 h6 m-22 5 h4 m8 0 h4"
+        stroke="#fff" stroke-width="0.5" fill="none"/>
+</svg>
