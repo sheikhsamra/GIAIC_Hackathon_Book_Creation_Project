@@ -10,15 +10,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-book-domain.com',
+  url: 'https://sheikhsamra.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // For GitHub pages deployment, it is '/<projectName>/'
+  baseUrl: '/GIAIC_Hackathon_Book_Creation_Project/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'your-org', // Usually your GitHub org/user name.
-  projectName: 'physical-ai-textbook', // Usually your repo name.
+  organizationName: 'sheikhsamra', // Usually your GitHub org/user name.
+  projectName: 'GIAIC_Hackathon_Book_Creation_Project', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
