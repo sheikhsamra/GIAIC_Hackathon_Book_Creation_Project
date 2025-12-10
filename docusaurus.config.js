@@ -3,6 +3,10 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+// Determine the deployment platform
+const isGitHubPages = process.env.IS_GITHUB_PAGES === 'true';
+const isVercel = !!process.env.VERCEL_ENV || !!process.env.NOW_BUILDER;
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Physical AI & Humanoid Robotics Textbook',
@@ -10,15 +14,22 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://sheikhsamra.github.io',
+  url: isGitHubPages
+    ? 'https://sheikhsamra.github.io'
+    : (process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : 'https://your-book-domain.com'),
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is '/<projectName>/'
-  baseUrl: '/GIAIC_Hackathon_Book_Creation_Project/',
+  // For Vercel, it should be '/'
+  baseUrl: isGitHubPages
+    ? '/GIAIC_Hackathon_Book_Creation_Project/'
+    : '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sheikhsamra', // Usually your GitHub org/user name.
-  projectName: 'GIAIC_Hackathon_Book_Creation_Project', // Usually your repo name.
+  organizationName: isGitHubPages ? 'sheikhsamra' : undefined, // Usually your GitHub org/user name.
+  projectName: isGitHubPages ? 'GIAIC_Hackathon_Book_Creation_Project' : undefined, // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -44,7 +55,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sheikhsamra/GIAIC_Hackathon_Book_Creation_Project',
+            'https://github.com/sheikhsamra/GIAIC_Hackathon_Book_Creation_Project/edit/main/',
         },
         blog: false, // Disable blog if not needed
         theme: {
