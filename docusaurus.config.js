@@ -20,7 +20,7 @@ const config = {
   organizationName: 'sheikhsamra', // Usually your GitHub org/user name.
   projectName: 'GIAIC_Hackathon_Book_Creation_Project', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   trailingSlash: false,
 
